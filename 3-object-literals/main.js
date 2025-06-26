@@ -1,14 +1,9 @@
-let programmer  = {
-    name: 'Ashikur Rahman',
-    preferredLanguage: 'JavaScript',
-    writeCode: function () 
-    {
-        console.log(`${this.name} write code in ${this.preferredLanguage}`);
-    },
-    drinkCoffee: function () 
-    {
-        console.log(`${this.name} drinks coffee.`);
-    },
+let groceryItem  = {
+    name: 'Apple',
+    quantity: 44,
+    display: function() {
+        console.log(`Item: ${this.name}, Quantity: ${this.quantity}`);
+    }
 }; 
 
-programmer.writeCode();
+groceryItem.display();
