@@ -1,9 +1,14 @@
-let groceryItem  = {
-    name: 'Apple',
-    quantity: 44,
-    display: function() {
-        console.log(`Item: ${this.name}, Quantity: ${this.quantity}`);
-    }
-}; 
+function createGroceryItem ( name, quantity ) 
+{
+    return {
+        name,
+        quantity,
 
-groceryItem.display();
+        display() {
+            console.log(`${this.quantity} x ${this.name}`);
+        }
+    };
+}
+
+const newGroceryItem = createGroceryItem('Orange', 5);
+newGroceryItem.display();
